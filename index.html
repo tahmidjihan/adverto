@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adverto</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="navbar"
+        style="background: rgba(1, 130, 113, 0.627); z-index: 2"
+      >
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#pricing">pricing</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <label class="swap swap-rotate">
+                  <!-- this hidden checkbox controls the state -->
+                  <input
+                    type="checkbox"
+                    class="theme-controller"
+                    value="light"
+                  />
+
+                  <!-- sun icon -->
+                  <svg
+                    class="swap-off h-10 w-10 fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+                    />
+                  </svg>
+
+                  <!-- moon icon -->
+                  <svg
+                    class="swap-on h-10 w-10 fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+                    />
+                  </svg>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">
+            <!-- logo  -->
+            <div
+              style="
+                font-family: 'Work Sans', sans-serif;
+                font-size: 24px;
+                color: #fff;
+              "
+            >
+              <i class="fas fa-bullhorn"></i>
+              <span style="margin-left: 5px">Adverto</span>
+            </div>
+            <!-- logo -->
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <label class="swap swap-rotate mode mr-3">
+            <style>
+              @media screen and (max-width: 950px) {
+                .mode {
+                  display: none;
+                }
+              }
+            </style>
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" class="theme-controller" value="light" />
+
+            <!-- sun icon -->
+            <svg
+              class="swap-off h-10 w-10 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+              />
+            </svg>
+
+            <!-- moon icon -->
+            <svg
+              class="swap-on h-10 w-10 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+              />
+            </svg>
+          </label>
+          <a class="btn btn-transparent">Get Started</a>
+        </div>
+      </div>
+      <div class="header-main text-white">
+        <div
+          class="header-texts flex flex-col text-center pt-32 lg:pt-72 max-w-[600px] mx-auto"
+        >
+          <h1 class="text-5xl font-bold">
+            Elevate Your Brand’s Digital Presence with Adverto’s Cutting-Edge
+            Marketing Solutions
+          </h1>
+          <p class="">
+            At Adverto, we craft custom digital strategies that deliver
+            impactful results. From boosting your online presence to driving
+            conversions, we help your business grow with tailored solutions.
+          </p>
+          <div class="inline-btn flex gap-5 mt-3 mx-auto">
+            <button class="btn btn-success">Get Started</button
+            ><button class="btn btn-[] border-success">
+              View Our Services
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="min-h-[100vh]">
+        <!-- section header  -->
+        <div class="section-header ml-24 my-24">
+          <h1 class="text-2xl font-bold">
+            About Us
+            <i class="fas fa-bullhorn -rotate-45 text-success text-4xl"></i>
+          </h1>
+          <hr class="border-success w-24" />
+        </div>
+        <!-- section header  -->
+        <div
+          class="about-main flex justify-center align-middle gap-16 mx-auto flex-wrap"
+        >
+          <div class="about-left flex align-middle justify-center">
+            <img src="img/about.svg" alt="" class="lg:h-[70%]" />
+          </div>
+          <div
+            class="about-right max-w-96 flex justify-center align-middle flex-col gap-6"
+          >
+            <h1 class="text-2xl font-bold">
+              Driven by <span class="text-success">Results</span>
+              , Powered by
+              <span class="text-success">Creativity</span>
+            </h1>
+            <p>
+              At Adverto, we’re a team of passionate digital marketing experts
+              dedicated to transforming brands through innovative and
+              data-driven strategies. Our focus is on delivering measurable
+              results that help businesses thrive in today’s competitive digital
+              landscape. Whether you need SEO, social media management, or
+              full-scale campaign development, we’re here to craft the perfect
+              solution that meets your unique needs.
+            </p>
+            <button class="btn btn-success">Read more</button>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="bg-service">
+          <img src="img/services.svg" alt="" />
+        </div>
+        <div class="section-header ml-24 my-24">
+          <h1 class="text-2xl font-bold">
+            Services
+            <i class="fas fa-bullhorn -rotate-45 text-success text-4xl"></i>
+          </h1>
+          <hr class="border-success w-24" />
+        </div>
+        <div
+          class="inline-content ml-24 flex gap-6 fllex wrap justify-center mx-auto flex-col md:flex-row max-w-[900px]"
+        >
+          <div class="lhs max-w-96">
+            <h1 class="text-4xl font-bold">
+              We Providing Best <br />
+              Advance <br />
+              Services
+            </h1>
+          </div>
+          <div class="rhs max-w-96">
+            <p>
+              <b class="text-success text-xl">At Adverto,</b>
+              we provide the best digital marketing services designed to enhance
+              your brand’s visibility and impact. Our team combines creativity
+              and strategy to develop custom campaigns that align with your
+              business objectives, ensuring you stand out in a competitive
+              market. From targeted ads to brand development, we help you reach
+              the right audience at the right time.
+            </p>
+          </div>
+        </div>
+        <hr class="border-slate-600 rounded-sm mx-12 my-16" />
+        <div
+          class="inline-content my-10 ml-24 flex gap-6 fllex wrap justify-center mx-auto flex-col md:flex-row max-w-[900px]"
+        >
+          <div class="lhs max-w-96">
+            <p>
+              <b class="text-success text-xl">Our advanced</b> marketing
+              services leverage the latest industry tools and technologies to
+              maximize your online presence. Whether it’s data-driven SEO,
+              social media management, or conversion-focused email campaigns, we
+              use innovative techniques to drive growth and measurable results
+              for your business.
+            </p>
+          </div>
+          <div class="rhs max-w-96">
+            <p>
+              <b class="text-success text-xl">We go beyond </b>
+              traditional solutions by offering cutting-edge services that are
+              tailored to your specific needs. Our expertise spans across
+              e-commerce, real estate, digital marketing, and more, enabling us
+              to provide specialized solutions that fit your industry. Partner
+              with us to elevate your digital strategy and achieve sustainable
+              success.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- component -->
+      <section class="bg-gray-900 py-12" id="pricing">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-white sm:text-5xl">
+              Pricing Plans
+            </h2>
+            <p class="mt-4 text-xl text-gray-400">
+              Simple, transparent pricing for your business needs.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- Free Plan -->
+            <div
+              class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
+            >
+              <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-white">Free</h3>
+                <p class="mt-4 text-gray-400">
+                  Get started with our basic features.
+                </p>
+              </div>
+              <div class="mb-8">
+                <span class="text-5xl font-extrabold text-white">$0</span>
+                <span class="text-xl font-medium text-gray-400">/mo</span>
+              </div>
+              <ul class="mb-8 space-y-4 text-gray-400">
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>1 campain(s)/month</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>10 transactions per month</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>Basic support</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-success :hover[bg-green-700]"
+              >
+                Sign Up
+              </a>
+            </div>
+
+            <!-- Starter Plan -->
+            <div
+              class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
+            >
+              <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-white">Starter</h3>
+                <p class="mt-4 text-gray-400">
+                  Perfect for small businesses and startups.
+                </p>
+              </div>
+              <div class="mb-8">
+                <span class="text-5xl font-extrabold text-white">$49</span>
+                <span class="text-xl font-medium text-gray-400">/mo</span>
+              </div>
+              <ul class="mb-8 space-y-4 text-gray-400">
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>5 campain(s)/months</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>100 transactions per month</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>Standard support</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-success :hover[bg-green-700]"
+              >
+                Get Started
+              </a>
+            </div>
+
+            <!-- Pro Plan -->
+            <div
+              class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
+            >
+              <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-white">Pro</h3>
+                <p class="mt-4 text-gray-400">
+                  Ideal for growing businesses and enterprises.
+                </p>
+              </div>
+              <div class="mb-8">
+                <span class="text-5xl font-extrabold text-white">$99</span>
+                <span class="text-xl font-medium text-gray-400">/mo</span>
+              </div>
+              <ul class="mb-8 space-y-4 text-gray-400">
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>Unlimited campain(s)/months</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>Unlimited transactions</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>Priority support</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>Advanced analytics</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-success :hover[bg-green-700]"
+              >
+                Get Started
+              </a>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div
+              class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
+            >
+              <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-white">Enterprise</h3>
+                <p class="mt-4 text-gray-400">
+                  Tailored for large-scale deployments and custom needs.
+                </p>
+              </div>
+              <div class="mb-8">
+                <span class="text-5xl font-extrabold text-white">Custom</span>
+              </div>
+              <ul class="mb-8 space-y-4 text-gray-400">
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>Dedicated infrastructure</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>Custom integrations</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>Dedicated support team</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-solid fa-check text-success"></i>
+                  <span>Premium SLAs</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-success :hover[bg-green-700]"
+              >
+                Contact Sales
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial">
+        <div class="section-header ml-24 mt-24">
+          <h1 class="text-2xl font-bold">
+            Testimonials
+            <i class="fas fa-bullhorn -rotate-45 text-success text-4xl"></i>
+          </h1>
+          <hr class="border-success w-24" />
+          <h1 class="text-3xl font-extrabold">Testimonials</h1>
+          <p>These are some of our happy clients review.</p>
+        </div>
+        <div class="cards flex justify-around flex-wrap gap-16">
+          <div class="card card-side bg-base-100 shadow-xl w-[550px] px-5">
+            <figure class="py-5s">
+              <img
+                src="https://thumbs.dreamstime.com/b/smiling-indian-man-looking-camera-mature-wearing-spectacles-portrait-middle-eastern-confident-businessman-office-195195079.jpg"
+                alt="User Testimonial"
+                class="rounded-full w-[100px] h-[100px] mx-5"
+              />
+            </figure>
+            <div class="card-body w-[300px]">
+              <h2 class="card-title">Jamal Kudus's Experience</h2>
+              <p>
+                "Adverto has transformed our business with their cutting-edge
+                marketing solutions. Their team is professional, and the results
+                speak for themselves!"
+              </p>
+              <div class="card-actions justify-end">
+                <i class="fas fa-quote-right text-success text-3xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card card-side bg-base-100 shadow-xl w-[550px] px-5">
+            <figure class="py-5s">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="User Testimonial"
+                class="rounded-full w-[100px] h-[100px] mx-5"
+              />
+            </figure>
+            <div class="card-body w-[300px]">
+              <h2 class="card-title">Elizabeth's Experience</h2>
+              <p>
+                "Adverto transformed our online presence with fresh, creative
+                strategies. Their dedication brought amazing results, and we
+                couldn’t be more thrilled!"
+              </p>
+              <div class="card-actions justify-end">
+                <i class="fas fa-quote-right text-success text-3xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-dark p-10">
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Digital Marketing</a>
+        <a class="link link-hover">SEO & Analytics</a>
+        <a class="link link-hover">Brand Strategy</a>
+        <a class="link link-hover">Web Development</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Our Team</a>
+        <a class="link link-hover">Careers</a>
+        <a class="link link-hover">Press</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of Service</a>
+        <a class="link link-hover">Privacy Policy</a>
+        <a class="link link-hover">Cookie Policy</a>
+      </nav>
+      <form>
+        <h6 class="footer-title">Stay Updated</h6>
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Subscribe to our newsletter</span>
+          </label>
+          <div class="join">
+            <input
+              type="email"
+              placeholder="you@adverto.com"
+              class="input input-bordered join-item"
+            />
+            <button class="btn btn-success join-item">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>
