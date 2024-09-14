@@ -441,7 +441,7 @@
           </div>
         </div>
       </section>
-      <section id="testimonial">
+      <section id="testimonial" class="py-20">
         <div class="section-header ml-24 mt-24">
           <h1 class="text-2xl font-bold">
             Testimonials
@@ -494,8 +494,111 @@
           </div>
         </div>
       </section>
+      <section
+        id="contact"
+        class="py-20 min-h-[100vh] max-h-[120vh] align-middle justify-center text-white"
+      >
+         <div class="section-header h-[170px] p-10 rounded-[18px]  text-center bg-[rgba(0,0,0,0.7)] border border-[rgba(255,255,255,0.1)] backdrop-blur-[8px] bg-opacity-60">
+          <h1 class="text-2xl font-bold">
+            Contact us
+            <i class="fas fa-bullhorn -rotate-45 text-success text-4xl"></i>
+          </h1>
+          <hr class="border-success w-24" />
+          <h1 class="text-3xl font-extrabold">Any Questions?</h1>
+          <p>We are happy to take your questions. if you don't find it here feel free to message us</p>
+        </div>
+        <div class="flex flex-wrap gap-16 mt-24">
+                   <div class="faq max-w-[500px] mx-12 mt-24">
+          <div
+            class="collapse collapse-plus bg-[rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.1)] backdrop-blur-[8px] bg-opacity-60"
+          >
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What services does Adverto offer?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Adverto specializes in digital marketing, SEO, brand strategy,
+                and web development, tailored to meet your business goals.
+              </p>
+            </div>
+          </div>
+          <div
+            class="collapse collapse-plus bg-[rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.1)] backdrop-blur-[8px] bg-opacity-60"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              How can I get started with Adverto?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Simply reach out to us through our contact form or schedule a
+                consultation to discuss your needs and how we can assist you.
+              </p>
+            </div>
+          </div>
+          <div
+            class="collapse collapse-plus bg-[rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.1)] backdrop-blur-[8px] bg-opacity-60"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              What makes Adverto different from other agencies?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Our approach combines creativity with data-driven strategies,
+                ensuring we deliver customized solutions that drive real results
+                for your brand.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form w-500px mt-3 h-[390px] border border-[rgba(255,255,255,0.1)] text-white bg-[rgba(0,0,0,0.3)] backdrop-blur-[8px] rounded-[24px]">
+          <te
+            class="card p-10 flex flex-col"
+          >
+            <div class="inline-form">
+              <input
+                type="text"
+                placeholder="First name"
+                style="
+                  background: transparent;
+                  margin:5px;padding: 10px;border:1px solid rgba(255, 255, 255, 0.1);
+                "
+                class="rounded-[18px] focus:outline-none placeholder:text-white"
+                required
+              /><input
+                type="text"
+                placeholder="Last name"
+                style="
+                  background: transparent;
+                  margin:5px;padding: 10px;border:1px solid rgba(255, 255, 255, 0.1);
+                "
+                class="rounded-[18px] focus:outline-none placeholder:text-white"
+                required
+              />
+            </div>
+            <input
+              type="Email"
+              placeholder="Email"
+              style="background: transparent; margin:5px;padding: 10px;border:1px solid rgba(255, 255, 255, 0.1)"
+              class="rounded-[18px] focus:outline-none placeholder:text-white"
+              required
+            />
+            <textarea
+              type="text"
+              placeholder="Your message"
+              style="background: transparent; margin:5px;padding: 10px;border:1px solid rgba(255, 255, 255, 0.1)"
+              class="rounded-[18px] focus:outline-none placeholder:text-white"
+              rows="5"
+              required
+            ></textarea>
+            <button class="btn-success btn">Submit</button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer bg-dark p-10">
+    <footer class="footer bg-dark p-10 text-black">
       <nav>
         <h6 class="footer-title">Services</h6>
         <a class="link link-hover">Digital Marketing</a>
@@ -520,18 +623,23 @@
         <h6 class="footer-title">Stay Updated</h6>
         <fieldset class="form-control w-80">
           <label class="label">
-            <span class="label-text">Subscribe to our newsletter</span>
+            <span class="label-text text-black"
+              >Subscribe to our newsletter</span
+            >
           </label>
           <div class="join">
             <input
               type="email"
               placeholder="you@adverto.com"
-              class="input input-bordered join-item"
+              class="input input-bordered join-item text-white"
             />
             <button class="btn btn-success join-item">Subscribe</button>
           </div>
         </fieldset>
       </form>
     </footer>
+    <div class="text-center">
+      &copy; All rights reserved by Adverto | created by Edricenti
+    </div>
   </body>
 </html>

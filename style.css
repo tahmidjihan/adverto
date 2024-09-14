@@ -16,3 +16,12 @@ header {
   z-index: -1;
   right: 10vw;
 }
+.footer {
+  background: url(img/bg.png);
+}
+#contact {
+  background: url(img/space.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
