@@ -20,8 +20,12 @@ header {
   background: url(img/bg.png);
 }
 #contact {
-  background: url(img/space.jpg);
+  background: linear-gradient(rgba(3, 180, 39, 0.46), rgba(0, 58, 87, 0.582)),
+    url(img/space.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
+}
+.testimonial-card {
+  background: linear-gradient(rgb(0, 119, 24), rgba(0, 67, 100, 1));
 }
