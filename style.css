@@ -17,7 +17,8 @@ header {
   right: 10vw;
 }
 .footer {
-  background: url(img/bg.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.6)),
+    url(img/bg.png);
 }
 #contact {
   background: linear-gradient(rgba(3, 180, 39, 0.46), rgba(0, 58, 87, 0.582)),
